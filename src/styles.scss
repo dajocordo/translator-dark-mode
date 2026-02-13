@@ -25,3 +25,15 @@ body {
     /* centra horizontalmente */
     width: 100% !important;
 }
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxes {
+    width: 50% !important;
+}
