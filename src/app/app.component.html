@@ -11,10 +11,10 @@
 <div class="row container" style="width: 100%;">
   <div class="row container" style="width: 100%; padding: 15px;">
     <div class="boxes" style="width: 50%; padding: 15px;">
-      <textarea style="width: 100%;" rows="5" cols="30" pTextarea [autoResize]="true">English</textarea>
+      <textarea style="width: 100%;" rows="5" cols="30" pTextarea [autoResize]="true" [(ngModel)]="translate.input" (ngModelChange)="getTranslate()"></textarea>
     </div>
     <div class="boxes" style="width: 50%; padding: 15px;">
-      <textarea style="width: 100%;" rows="5" cols="30" pTextarea [autoResize]="true">Spanish</textarea>
+      <textarea style="width: 100%;" rows="5" cols="30" pTextarea [autoResize]="true" [(ngModel)]="translate.output" readonly></textarea>
     </div>
   </div>
 </div>

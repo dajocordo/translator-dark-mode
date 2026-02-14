@@ -39,29 +39,29 @@ export class AppComponent implements OnInit {
     }
   ];
   translate: {
-    language: string,
-    content: string
+    input: string,
+    output: string
   } = {
-      language: '',
-      content: '',
+      input: '',
+      output: '',
     }
 
   constructor(private translateService: TranslateService) {
   }
 
   ngOnInit() {
-    console.log('probando-1');
+    this.translate.input = '';
+    this.translate.output = '';
   }
 
-
-  public getTranslate(translate: any) {
-    this.translate = translate;
-    this.displayModal = true;
+  async getTranslate() {
+    this.translate.output = '';
+    this.translateService.translate(this.translate.input, 'es', 'en').subscribe(
+      (response) => {
+        const tranlation = response[0][0][0] ?? '';
+        this.translate.output = tranlation;
+      }
+    );
   }
-
-
-
-
-
 
 }
