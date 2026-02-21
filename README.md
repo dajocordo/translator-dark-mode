@@ -4,7 +4,6 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 ![translate-api-google](https://github.com/user-attachments/assets/f3b88f0e-ff04-45ba-b315-142282243e42)
 
-
 ## Development server
 
 To start a local development server, run:
