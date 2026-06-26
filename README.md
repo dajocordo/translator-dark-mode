@@ -6,4 +6,4 @@ Es una version alternativa del traductor de google, de español, a ingles, pero 
 
 ## 🚀 Ver en Vivo
 
-[Visita la landing page]([https://dajocordo.github.io/translator-dark-mode/])
+[Visita la landing page](https://dajocordo.github.io/translator-dark-mode/)
