@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { DialogModule } from 'primeng/dialog';
@@ -14,7 +13,6 @@ import { TextareaModule } from 'primeng/textarea';
   selector: 'app-root',
   imports: [
     CommonModule,
-    RouterOutlet,
     ButtonModule,
     CardModule,
     DialogModule,
